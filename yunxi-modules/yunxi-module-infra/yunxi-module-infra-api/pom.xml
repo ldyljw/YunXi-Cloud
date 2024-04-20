@@ -16,8 +16,11 @@
     <description>
         infra 模块 API，暴露给其它模块调用
     </description>
+    <url>https://gitee.com/lidingyin/yunxi-cloud</url>
 
     <dependencies>
+
+        <!-- 基础设施 -->
         <dependency>
             <groupId>com.yunxi</groupId>
             <artifactId>yunxi-spring-boot-starter-base</artifactId>
@@ -30,5 +33,6 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
+
 
 </project>

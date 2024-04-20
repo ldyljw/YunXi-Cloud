@@ -17,5 +17,59 @@
         erp 包下，企业资源管理（Enterprise Resource Planning）。
         例如说：采购、销售、库存、财务、产品等等
     </description>
+    <url>https://gitee.com/lidingyin/yunxi-cloud</url>
+    <dependencies>
+        <!-- 系统接口 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-module-system-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <!-- ERP 接口 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-module-erp-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <!-- 业务组件 -->
+        <!-- Web 相关 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- 安全认证 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <!-- DB 数据库相关 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-mybatis</artifactId>
+        </dependency>
+
+        <!-- Redis -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-redis</artifactId>
+        </dependency>
+
+        <!-- 工具类相关 -->
+        <!-- Excel 拓展 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-excel</artifactId>
+        </dependency>
+
+        <!-- Test 测试相关 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-test</artifactId>
+        </dependency>
+
+    </dependencies>
 
 </project>

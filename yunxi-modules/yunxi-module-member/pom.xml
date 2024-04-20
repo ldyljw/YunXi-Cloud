@@ -17,6 +17,8 @@
         member 会员模块，放会员业务。
         例如说：会员中心等等
     </description>
+    <url>https://gitee.com/lidingyin/yunxi-cloud</url>
+
     <modules>
         <module>yunxi-module-member-api</module>
         <module>yunxi-module-member-biz</module>

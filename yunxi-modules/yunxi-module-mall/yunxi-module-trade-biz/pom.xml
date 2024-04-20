@@ -17,5 +17,83 @@
         trade 模块，主要实现交易相关功能
         例如：订单、退款、购物车等功能。
     </description>
+    <url>https://gitee.com/lidingyin/yunxi-cloud</url>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-module-trade-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-module-product-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-module-pay-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-module-promotion-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-module-member-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-module-system-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <!-- 业务组件 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-tenant</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-ip</artifactId>
+        </dependency>
+
+        <!-- Web 相关 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <!-- DB 相关 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-mybatis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-redis</artifactId>
+        </dependency>
+
+        <!-- Test 测试相关 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-test</artifactId>
+        </dependency>
+
+        <!-- 工具类相关 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-excel</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

@@ -29,7 +29,8 @@
         <dynamic-datasource.version>4.3.0</dynamic-datasource.version>
         <mybatis-plus-join.version>1.4.10</mybatis-plus-join.version>
         <easy-trans.version>2.2.11</easy-trans.version>
-        <redisson.version>3.18.0</redisson.version> <!-- Spring Boot 2.X 最多使用 3.18.0 版本，否则会报 Tuple NoClassDefFoundError -->
+        <redisson.version>3.18.0
+        </redisson.version> <!-- Spring Boot 2.X 最多使用 3.18.0 版本，否则会报 Tuple NoClassDefFoundError -->
         <dm8.jdbc.version>8.1.3.62</dm8.jdbc.version>
         <!-- 消息队列 -->
         <rocketmq-spring.version>2.2.3</rocketmq-spring.version>
@@ -100,21 +101,25 @@
                     </exclusion>
                 </exclusions>
             </dependency>
-            <!--<dependency>
-                <groupId>cn.iocoder.boot</groupId>
-                <artifactId>yudao-spring-boot-starter-biz-tenant</artifactId>
+
+            <!-- 多租户 -->
+            <dependency>
+                <groupId>com.yunxi</groupId>
+                <artifactId>yunxi-spring-boot-starter-tenant</artifactId>
                 <version>${revision}</version>
             </dependency>
+            <!-- 数据权限 -->
             <dependency>
-                <groupId>cn.iocoder.boot</groupId>
-                <artifactId>yudao-spring-boot-starter-biz-data-permission</artifactId>
+                <groupId>com.yunxi</groupId>
+                <artifactId>yunxi-spring-boot-starter-data-permission</artifactId>
                 <version>${revision}</version>
             </dependency>
+            <!-- IP 拓展 -->
             <dependency>
-                <groupId>cn.iocoder.boot</groupId>
-                <artifactId>yudao-spring-boot-starter-biz-ip</artifactId>
+                <groupId>com.yunxi</groupId>
+                <artifactId>yunxi-spring-boot-starter-ip</artifactId>
                 <version>${revision}</version>
-            </dependency>-->
+            </dependency>
 
             <!-- Spring 核心 -->
             <dependency>
@@ -125,24 +130,27 @@
             </dependency>
 
             <!-- Web 相关 -->
-           <!-- <dependency>
-                <groupId>cn.iocoder.boot</groupId>
-                <artifactId>yudao-spring-boot-starter-web</artifactId>
+            <!-- web 框架 -->
+            <dependency>
+                <groupId>com.yunxi</groupId>
+                <artifactId>yunxi-spring-boot-starter-web</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <!-- 安全框架 -->
+            <dependency>
+                <groupId>com.yunxi</groupId>
+                <artifactId>yunxi-spring-boot-starter-security</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <!-- WebSocket 框架 -->
+            <dependency>
+                <groupId>com.yunxi</groupId>
+                <artifactId>yunxi-spring-boot-starter-websocket</artifactId>
                 <version>${revision}</version>
             </dependency>
 
-            <dependency>
-                <groupId>cn.iocoder.boot</groupId>
-                <artifactId>yudao-spring-boot-starter-security</artifactId>
-                <version>${revision}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>cn.iocoder.boot</groupId>
-                <artifactId>yudao-spring-boot-starter-websocket</artifactId>
-                <version>${revision}</version>
-            </dependency>-->
-
+            <!-- swagger 相关 -->
+            <!-- knife4j 文档 -->
             <dependency>
                 <groupId>com.github.xiaoymin</groupId>
                 <artifactId>knife4j-openapi3-spring-boot-starter</artifactId>
@@ -154,41 +162,46 @@
                 <version>${springdoc.version}</version>
             </dependency>
 
-            <!-- DB 相关 -->
-           <!-- <dependency>
-                <groupId>cn.iocoder.boot</groupId>
-                <artifactId>yudao-spring-boot-starter-mybatis</artifactId>
+            <!-- DB 数据库相关 -->
+            <!-- 数据库链接池 -->
+            <dependency>
+                <groupId>com.yunxi</groupId>
+                <artifactId>yunxi-spring-boot-starter-mybatis</artifactId>
                 <version>${revision}</version>
-            </dependency>-->
-
+            </dependency>
+            <!-- druid 数据源 -->
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid.version}</version>
             </dependency>
+            <!-- Mybatis PLUS -->
             <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus.version}</version>
             </dependency>
+            <!-- Mybatis PLUS 代码生成器，使用它解析表结构 -->
             <dependency>
                 <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus-generator</artifactId> <!-- 代码生成器，使用它解析表结构 -->
+                <artifactId>mybatis-plus-generator</artifactId>
                 <version>${mybatis-plus-generator.version}</version>
             </dependency>
+            <!-- 多数据源 -->
             <dependency>
                 <groupId>com.baomidou</groupId>
-                <artifactId>dynamic-datasource-spring-boot-starter</artifactId> <!-- 多数据源 -->
+                <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
                 <version>${dynamic-datasource.version}</version>
             </dependency>
+            <!-- MyBatis 联表查询 -->
             <dependency>
                 <groupId>com.github.yulichang</groupId>
-                <artifactId>mybatis-plus-join-boot-starter</artifactId> <!-- MyBatis 联表查询 -->
+                <artifactId>mybatis-plus-join-boot-starter</artifactId>
                 <version>${mybatis-plus-join.version}</version>
             </dependency>
-
+            <!-- VO 数据翻译 -->
             <dependency>
-                <groupId>com.fhs-opensource</groupId> <!-- VO 数据翻译 -->
+                <groupId>com.fhs-opensource</groupId>
                 <artifactId>easy-trans-spring-boot-starter</artifactId>
                 <version>${easy-trans.version}</version>
                 <exclusions>
@@ -202,6 +215,7 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+            <!-- easy trans 数据翻译框架的扩展包 -->
             <dependency>
                 <groupId>com.fhs-opensource</groupId>
                 <artifactId>easy-trans-mybatis-plus-extend</artifactId>
@@ -213,12 +227,14 @@
                 <version>${easy-trans.version}</version>
             </dependency>
 
-           <!-- <dependency>
-                <groupId>cn.iocoder.boot</groupId>
-                <artifactId>yudao-spring-boot-starter-redis</artifactId>
+            <!-- Redis -->
+            <dependency>
+                <groupId>com.yunxi</groupId>
+                <artifactId>yunxi-spring-boot-starter-redis</artifactId>
                 <version>${revision}</version>
-            </dependency>-->
+            </dependency>
 
+            <!-- Redisson 客户端 -->
             <dependency>
                 <groupId>org.redisson</groupId>
                 <artifactId>redisson-spring-boot-starter</artifactId>
@@ -231,6 +247,7 @@
                 </exclusions>
             </dependency>
 
+            <!-- 达梦数据库驱动 -->
             <dependency>
                 <groupId>com.dameng</groupId>
                 <artifactId>DmJdbcDriver18</artifactId>
@@ -238,19 +255,19 @@
             </dependency>
 
             <!-- Job 定时任务相关 -->
-       <!--     <dependency>
-                <groupId>cn.iocoder.boot</groupId>
-                <artifactId>yudao-spring-boot-starter-job</artifactId>
+            <dependency>
+                <groupId>com.yunxi</groupId>
+                <artifactId>yunxi-spring-boot-starter-job</artifactId>
                 <version>${revision}</version>
             </dependency>
 
-            &lt;!&ndash; 消息队列相关 &ndash;&gt;
+            <!-- 消息队列相关 -->
             <dependency>
-                <groupId>cn.iocoder.boot</groupId>
-                <artifactId>yudao-spring-boot-starter-mq</artifactId>
+                <groupId>com.yunxi</groupId>
+                <artifactId>yunxi-spring-boot-starter-mq</artifactId>
                 <version>${revision}</version>
-            </dependency>-->
-
+            </dependency>
+            <!-- rocketmq -->
             <dependency>
                 <groupId>org.apache.rocketmq</groupId>
                 <artifactId>rocketmq-spring-boot-starter</artifactId>
@@ -258,12 +275,13 @@
             </dependency>
 
             <!-- 服务保障相关 -->
-          <!--  <dependency>
-                <groupId>cn.iocoder.boot</groupId>
-                <artifactId>yudao-spring-boot-starter-protection</artifactId>
+            <dependency>
+                <groupId>com.yunxi</groupId>
+                <artifactId>yunxi-spring-boot-starter-protection</artifactId>
                 <version>${revision}</version>
-            </dependency>-->
+            </dependency>
 
+            <!-- lock4j -->
             <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>lock4j-redisson-spring-boot-starter</artifactId>
@@ -277,11 +295,11 @@
             </dependency>
 
             <!-- 监控相关 -->
-            <!--<dependency>
-                <groupId>cn.iocoder.boot</groupId>
-                <artifactId>yudao-spring-boot-starter-monitor</artifactId>
+            <dependency>
+                <groupId>com.yunxi</groupId>
+                <artifactId>yunxi-spring-boot-starter-monitor</artifactId>
                 <version>${revision}</version>
-            </dependency>-->
+            </dependency>
 
             <dependency>
                 <groupId>org.apache.skywalking</groupId>
@@ -324,9 +342,10 @@
                 <version>${opentracing.version}</version>
             </dependency>
 
+            <!-- 实现 Spring Boot Admin Server 服务端 -->
             <dependency>
                 <groupId>de.codecentric</groupId>
-                <artifactId>spring-boot-admin-starter-server</artifactId> <!-- 实现 Spring Boot Admin Server 服务端 -->
+                <artifactId>spring-boot-admin-starter-server</artifactId>
                 <version>${spring-boot-admin.version}</version>
                 <exclusions>
                     <exclusion>
@@ -335,24 +354,25 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+            <!-- 实现 Spring Boot Admin Server 服务端 -->
             <dependency>
                 <groupId>de.codecentric</groupId>
-                <artifactId>spring-boot-admin-starter-client</artifactId> <!-- 实现 Spring Boot Admin Server 服务端 -->
+                <artifactId>spring-boot-admin-starter-client</artifactId>
                 <version>${spring-boot-admin.version}</version>
             </dependency>
 
             <!-- Test 测试相关 -->
-            <!--<dependency>
-                <groupId>cn.iocoder.boot</groupId>
-                <artifactId>yudao-spring-boot-starter-test</artifactId>
+            <dependency>
+                <groupId>com.yunxi</groupId>
+                <artifactId>yunxi-spring-boot-starter-test</artifactId>
                 <version>${revision}</version>
-                <scope>test</scope>
-            </dependency>-->
+            </dependency>
 
+            <!-- 支持 Mockito 的 final 类与 static 方法的 mock -->
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-inline</artifactId>
-                <version>${mockito-inline.version}</version> <!-- 支持 Mockito 的 final 类与 static 方法的 mock -->
+                <version>${mockito-inline.version}</version>
             </dependency>
 
             <dependency>
@@ -371,14 +391,16 @@
                 </exclusions>
             </dependency>
 
+            <!-- 单元测试，采用内嵌的 Redis 数据库 -->
             <dependency>
-                <groupId>com.github.fppt</groupId> <!-- 单元测试，我们采用内嵌的 Redis 数据库 -->
+                <groupId>com.github.fppt</groupId>
                 <artifactId>jedis-mock</artifactId>
                 <version>${jedis-mock.version}</version>
             </dependency>
 
+            <!-- 单元测试，随机生成 POJO 类 -->
             <dependency>
-                <groupId>uk.co.jemos.podam</groupId> <!-- 单元测试，随机生成 POJO 类 -->
+                <groupId>uk.co.jemos.podam</groupId>
                 <artifactId>podam</artifactId>
                 <version>${podam.version}</version>
             </dependency>
@@ -403,21 +425,24 @@
                 <version>${revision}</version>
             </dependency>
 
-            <!--      <dependency>
-                 <groupId>cn.iocoder.boot</groupId>
-                 <artifactId>yudao-spring-boot-starter-excel</artifactId>
-                 <version>${revision}</version>
-             </dependency>-->
+            <!-- Excel 拓展 -->
+            <dependency>
+                <groupId>com.yunxi</groupId>
+                <artifactId>yunxi-spring-boot-starter-excel</artifactId>
+                <version>${revision}</version>
+            </dependency>
 
+            <!-- lombok -->
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
             </dependency>
 
+            <!-- 在Java 8或更高版本中使用mapstruct-jdk8 -->
             <dependency>
                 <groupId>org.mapstruct</groupId>
-                <artifactId>mapstruct</artifactId> <!-- use mapstruct-jdk8 for Java 8 or higher -->
+                <artifactId>mapstruct</artifactId>
                 <version>${mapstruct.version}</version>
             </dependency>
             <dependency>
@@ -431,56 +456,67 @@
                 <version>${mapstruct.version}</version>
             </dependency>
 
+            <!-- hutool 工具类库 -->
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
             </dependency>
 
+            <!-- easyexcel -->
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>easyexcel</artifactId>
                 <version>${easyexcel.verion}</version>
             </dependency>
+
+            <!-- commons-io -->
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
                 <version>${commons-io.version}</version>
             </dependency>
+            <!-- 文件类型的识别 -->
             <dependency>
                 <groupId>org.apache.tika</groupId>
-                <artifactId>tika-core</artifactId> <!-- 文件类型的识别 -->
+                <artifactId>tika-core</artifactId>
                 <version>${tika-core.version}</version>
             </dependency>
 
+            <!-- velocity 引擎 -->
             <dependency>
                 <groupId>org.apache.velocity</groupId>
                 <artifactId>velocity-engine-core</artifactId>
                 <version>${velocity.version}</version>
             </dependency>
 
+            <!-- fastjson-->
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
             </dependency>
 
+            <!-- 实现数据库文档 -->
             <dependency>
                 <groupId>cn.smallbun.screw</groupId>
-                <artifactId>screw-core</artifactId> <!-- 实现数据库文档 -->
+                <artifactId>screw-core</artifactId>
                 <version>${screw.version}</version>
                 <exclusions>
+                    <!-- 移除 Freemarker 依赖，采用 Velocity 作为模板引擎 -->
                     <exclusion>
                         <groupId>org.freemarker</groupId>
-                        <artifactId>freemarker</artifactId> <!-- 移除 Freemarker 依赖，采用 Velocity 作为模板引擎 -->
+                        <artifactId>freemarker</artifactId>
                     </exclusion>
+                    <!-- 最新版screw-core1.0.5依赖fastjson1.2.73存在漏洞，移除。 -->
                     <exclusion>
                         <groupId>com.alibaba</groupId>
-                        <artifactId>fastjson</artifactId> <!-- 最新版screw-core1.0.5依赖fastjson1.2.73存在漏洞，移除。 -->
+                        <artifactId>fastjson</artifactId>
                     </exclusion>
                 </exclusions>
             </dependency>
 
+            <!-- guava -->
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
@@ -493,30 +529,35 @@
                 <version>${guice.version}</version>
             </dependency>
 
+            <!-- 解决 ThreadLocal 父子线程的传值问题 -->
             <dependency>
                 <groupId>com.alibaba</groupId>
-                <artifactId>transmittable-thread-local</artifactId> <!-- 解决 ThreadLocal 父子线程的传值问题 -->
+                <artifactId>transmittable-thread-local</artifactId>
                 <version>${transmittable-thread-local.version}</version>
             </dependency>
 
+            <!-- 解决 ftp 连接 -->
             <dependency>
                 <groupId>commons-net</groupId>
-                <artifactId>commons-net</artifactId> <!-- 解决 ftp 连接 -->
+                <artifactId>commons-net</artifactId>
                 <version>${commons-net.version}</version>
             </dependency>
 
+            <!-- 解决 sftp 连接 -->
             <dependency>
                 <groupId>com.jcraft</groupId>
-                <artifactId>jsch</artifactId> <!-- 解决 sftp 连接 -->
+                <artifactId>jsch</artifactId>
                 <version>${jsch.version}</version>
             </dependency>
 
+            <!-- 验证码 -->
             <dependency>
                 <groupId>com.xingyuv</groupId>
                 <artifactId>spring-boot-starter-captcha-plus</artifactId>
                 <version>${captcha-plus.version}</version>
             </dependency>
 
+            <!-- IP -->
             <dependency>
                 <groupId>org.lionsoul</groupId>
                 <artifactId>ip2region</artifactId>
@@ -574,9 +615,10 @@
             </dependency>
             <!-- SMS SDK end -->
 
+            <!-- 社交登陆（例如说，个人微信、企业微信等等） -->
             <dependency>
                 <groupId>com.xingyuv</groupId>
-                <artifactId>spring-boot-starter-justauth</artifactId> <!-- 社交登陆（例如说，个人微信、企业微信等等） -->
+                <artifactId>spring-boot-starter-justauth</artifactId>
                 <version>${justauth.version}</version>
                 <exclusions>
                     <exclusion>

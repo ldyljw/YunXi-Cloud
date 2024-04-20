@@ -16,6 +16,8 @@
     <description>
         report 报表模块，主要实现数据可视化报表等功能。
     </description>
+    <url>https://gitee.com/lidingyin/yunxi-cloud</url>
+
     <modules>
         <module>yunxi-module-report-api</module>
         <module>yunxi-module-report-biz</module>

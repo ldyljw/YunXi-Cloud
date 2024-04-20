@@ -21,4 +21,6 @@
         system 模块下，放通用业务，支撑上层的核心业务。
         例如：用户、部门、权限、数据字典等等
     </description>
+    <url>https://gitee.com/lidingyin/yunxi-cloud</url>
+
 </project>

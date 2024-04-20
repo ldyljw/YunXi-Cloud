@@ -16,6 +16,72 @@
         crm 包下，客户关系管理（Customer Relationship Management）。
         例如说：客户、联系人、商机、合同、回款等等
     </description>
+    <url>https://gitee.com/lidingyin/yunxi-cloud</url>
 
+    <dependencies>
+        <!-- 系统 API -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-module-system-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <!-- 客户关系 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-module-crm-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <!-- 流程图 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-module-bpm-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <!-- 业务组件 -->
+        <!-- IP 工具 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-ip</artifactId>
+        </dependency>
+
+        <!-- 多租户 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-tenant</artifactId>
+        </dependency>
+
+        <!-- Web 相关 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-web</artifactId>
+        </dependency>
+
+
+        <!-- 安全认证 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <!-- DB 数据库相关 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-mybatis</artifactId>
+        </dependency>
+
+        <!-- 工具类相关 -->
+        <!-- Excel 拓展 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-excel</artifactId>
+        </dependency>
+
+        <!-- Test 测试相关 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-test</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

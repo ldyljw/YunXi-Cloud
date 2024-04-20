@@ -20,6 +20,8 @@
 
         工作流基于 Flowable 6 实现，分成流程定义、流程表单、流程实例、流程任务等功能模块。
     </description>
+    <url>https://gitee.com/lidingyin/yunxi-cloud</url>
+
     <modules>
         <module>yunxi-module-bpm-api</module>
         <module>yunxi-module-bpm-biz</module>

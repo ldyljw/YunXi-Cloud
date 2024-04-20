@@ -16,5 +16,74 @@
         bpm 包下，业务流程管理（Business Process Management），我们放工作流的功能，基于 Flowable 6 版本实现。
         例如说：流程定义、表单配置、审核中心（我的申请、我的待办、我的已办）等等
     </description>
+    <url>https://gitee.com/lidingyin/yunxi-cloud</url>
+
+    <dependencies>
+        <!-- 流程api -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-module-bpm-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <!-- 系统服务 API -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-module-system-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <!-- 业务组件 -->
+        <!-- 数据权限 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-data-permission</artifactId>
+        </dependency>
+        <!-- 多租户 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-tenant</artifactId>
+        </dependency>
+
+        <!-- Web 相关 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- 安全 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <!-- DB 数据库相关 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-mybatis</artifactId>
+        </dependency>
+
+        <!-- Test 测试相关 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-test</artifactId>
+        </dependency>
+
+        <!-- 工具类相关 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-excel</artifactId>
+        </dependency>
+
+        <!-- Flowable 工作流相关 -->
+        <dependency>
+            <groupId>org.flowable</groupId>
+            <artifactId>flowable-spring-boot-starter-process</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.flowable</groupId>
+            <artifactId>flowable-spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+    </dependencies>
 
 </project>

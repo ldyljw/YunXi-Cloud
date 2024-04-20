@@ -18,6 +18,7 @@
         <module>yunxi-framework</module>
         <module>yunxi-modules</module>
         <module>yunxi-server</module>
+        <module>yunxi-gateway</module>
     </modules>
 
     <properties>

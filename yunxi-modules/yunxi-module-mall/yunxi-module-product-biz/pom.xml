@@ -17,5 +17,47 @@
         product 模块，主要实现商品相关功能
         例如：品牌、商品分类、spu、sku等功能。
     </description>
+    <url>https://gitee.com/lidingyin/yunxi-cloud</url>
+    <dependencies>
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-module-product-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-module-member-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <!-- 业务组件 -->
+        <!-- Web 相关 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <!-- DB 相关 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-mybatis</artifactId>
+        </dependency>
+
+        <!-- Test 测试相关 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-test</artifactId>
+        </dependency>
+
+        <!-- 工具类相关 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-excel</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

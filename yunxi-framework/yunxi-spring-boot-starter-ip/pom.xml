@@ -19,5 +19,40 @@
         2. 城市功能：查询城市编码对应的城市信息
         基于 https://github.com/modood/Administrative-divisions-of-China 实现
     </description>
+    <url>https://gitee.com/lidingyin/yunxi-cloud</url>
+
+    <dependencies>
+        <!-- 基础包 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-base</artifactId>
+        </dependency>
+
+        <!-- IP地址检索 -->
+        <dependency>
+            <groupId>org.lionsoul</groupId>
+            <artifactId>ip2region</artifactId>
+        </dependency>
+
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <!-- slf4j -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <scope>provided</scope> <!-- 设置为 provided ，只有工具类需要使用到 -->
+        </dependency>
+
+        <!-- Test 测试相关 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-test</artifactId>
+        </dependency>
+
+    </dependencies>
 
 </project>

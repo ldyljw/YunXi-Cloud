@@ -17,6 +17,8 @@
     <description>
         商城大模块，由 product 商品、promotion 营销、trade 交易、statistics 统计等组成
     </description>
+    <url>https://gitee.com/lidingyin/yunxi-cloud</url>
+
     <modules>
         <module>yunxi-module-product-api</module>
         <module>yunxi-module-product-biz</module>

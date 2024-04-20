@@ -17,6 +17,9 @@
         erp 包下，企业资源管理（Enterprise Resource Planning）。
         例如说：采购、销售、库存、财务、产品等等
     </description>
+    <url>https://gitee.com/lidingyin/yunxi-cloud</url>
+
+
     <modules>
         <module>yunxi-module-erp-api</module>
         <module>yunxi-module-erp-biz</module>
