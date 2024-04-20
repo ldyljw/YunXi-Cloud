@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.yunxi</groupId>
         <artifactId>yunxi-modules</artifactId>
-        <version>1.0.1</version>
+        <version>${revision}</version>
     </parent>
 
     <artifactId>yunxi-module-mall</artifactId>
@@ -25,6 +25,7 @@
         <module>yunxi-module-statistics-api</module>
         <module>yunxi-module-statistics-biz</module>
         <module>yunxi-module-trade-api</module>
+        <module>yunxi-module-trade-biz</module>
     </modules>
 
 </project>

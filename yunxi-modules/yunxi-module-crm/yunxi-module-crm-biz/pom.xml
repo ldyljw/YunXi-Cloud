@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.yunxi</groupId>
         <artifactId>yunxi-module-crm</artifactId>
-        <version>1.0.1</version>
+        <version>${revision}</version>
     </parent>
 
     <artifactId>yunxi-module-crm-biz</artifactId>
