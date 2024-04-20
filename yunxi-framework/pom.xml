@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.yunxi</groupId>
+        <artifactId>Yunxi-Cloud</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <groupId>com.yunxi</groupId>
+    <artifactId>yunxi-framework</artifactId>
+    <packaging>pom</packaging>
+
+    <description>
+        该包是技术组件，每个子包，代表一个组件。
+    </description>
+    <url>https://gitee.com/lidingyin/yunxi-cloud</url>
+
+    <modules>
+        <module>yunxi-spring-boot-starter-base</module>
+        <module>yunxi-spring-boot-starter-data-permission</module>
+        <module>yunxi-spring-boot-starter-ip</module>
+        <module>yunxi-spring-boot-starter-tenant</module>
+        <module>yunxi-spring-boot-starter-excel</module>
+        <module>yunxi-spring-boot-starter-job</module>
+        <module>yunxi-spring-boot-starter-monitor</module>
+        <module>yunxi-spring-boot-starter-mq</module>
+        <module>yunxi-spring-boot-starter-mybatis</module>
+        <module>yunxi-spring-boot-starter-protection</module>
+        <module>yunxi-spring-boot-starter-redis</module>
+        <module>yunxi-spring-boot-starter-security</module>
+        <module>yunxi-spring-boot-starter-test</module>
+        <module>yunxi-spring-boot-starter-web</module>
+        <module>yunxi-spring-boot-starter-websocket</module>
+        <module>yunxi-spring-boot-starter-pay</module>
+    </modules>
+
+
+</project>

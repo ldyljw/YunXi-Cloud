@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.yunxi</groupId>
+        <artifactId>yunxi-module-mall</artifactId>
+        <version>1.0.1</version>
+    </parent>
+    <packaging>jar</packaging>
+
+    <artifactId>yunxi-module-promotion-biz</artifactId>
+    <name>${project.artifactId}</name>
+
+    <description>
+        promotion 模块，主要实现营销相关功能
+        例如：营销活动、banner 广告、优惠券、优惠码等功能。
+    </description>
+
+</project>

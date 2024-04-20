@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.yunxi</groupId>
+        <artifactId>Yunxi-Cloud</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <artifactId>yunxi-modules</artifactId>
+    <packaging>pom</packaging>
+
+    <name>${project.artifactId}</name>
+    <description>业务模块基础脚手架</description>
+    <url>https://gitee.com/lidingyin/yunxi-cloud</url>
+    <modules>
+        <module>yunxi-module-system</module>
+        <module>yunxi-module-infra</module>
+        <module>yunxi-module-bpm</module>
+        <module>yunxi-module-crm</module>
+        <module>yunxi-module-erp</module>
+        <module>yunxi-module-mall</module>
+        <module>yunxi-module-member</module>
+        <module>yunxi-module-wechat</module>
+        <module>yunxi-module-pay</module>
+        <module>yunxi-module-report</module>
+    </modules>
+
+
+</project>

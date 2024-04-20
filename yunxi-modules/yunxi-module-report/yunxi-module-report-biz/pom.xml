@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.yunxi</groupId>
+        <artifactId>yunxi-module-report</artifactId>
+        <version>1.0.1</version>
+    </parent>
+
+    <artifactId>yunxi-module-report-biz</artifactId>
+    <packaging>jar</packaging>
+
+    <name>${project.artifactId}</name>
+    <description>
+        report 报表模块，主要实现数据可视化报表等功能：
+        1. 基于「积木报表」实现，打印设计、报表设计、图形设计、大屏设计等。
+    </description>
+
+</project>

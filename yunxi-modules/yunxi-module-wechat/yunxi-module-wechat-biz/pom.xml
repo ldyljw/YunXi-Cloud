@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.yunxi</groupId>
+        <artifactId>yunxi-module-wechat</artifactId>
+        <version>1.0.1</version>
+    </parent>
+
+    <artifactId>yunxi-module-wechat-biz</artifactId>
+    <packaging>jar</packaging>
+
+    <name>${project.artifactId}</name>
+    <description>
+        wechat 模块，放微信微信公众号。
+        例如说：提供微信公众号的账号、菜单、粉丝、标签、消息、自动回复、素材、模板通知、运营数据等功能
+    </description>
+
+</project>
