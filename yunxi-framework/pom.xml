@@ -42,6 +42,7 @@
         <module>yunxi-spring-boot-starter-web</module>
         <module>yunxi-spring-boot-starter-websocket</module>
         <module>yunxi-spring-boot-starter-pay</module>
+        <module>yunxi-spring-boot-starter-env</module>
     </modules>
 
 

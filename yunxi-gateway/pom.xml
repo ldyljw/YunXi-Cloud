@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
@@ -11,13 +11,18 @@
 
     <artifactId>yunxi-gateway</artifactId>
     <packaging>jar</packaging>
-    
+
     <name>${project.artifactId}</name>
     <description>API 服务网关，基于 Spring Cloud Gateway 实现</description>
     <url>https://gitee.com/lidingyin/yunxi-cloud</url>
 
 
     <dependencies>
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-base</artifactId>
+        </dependency>
+        
         <!-- Spring Cloud 基础 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
