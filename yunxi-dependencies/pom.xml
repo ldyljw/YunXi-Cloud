@@ -278,12 +278,12 @@
                 <groupId>org.redisson</groupId>
                 <artifactId>redisson-spring-boot-starter</artifactId>
                 <version>${redisson.version}</version>
-                <exclusions>
+                <!--<exclusions>
                     <exclusion>
                         <groupId>org.springframework.boot</groupId>
                         <artifactId>spring-boot-starter-actuator</artifactId>
                     </exclusion>
-                </exclusions>
+                </exclusions>-->
             </dependency>
 
             <!-- 达梦数据库驱动 -->
@@ -293,7 +293,23 @@
                 <version>${dm8.jdbc.version}</version>
             </dependency>
 
+            <!-- RPC 远程调用相关 -->
+            <dependency>
+                <groupId>com.yunxi</groupId>
+                <artifactId>yunxi-spring-boot-starter-rpc</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
+            <!-- Registry 注册中心相关 -->
+
+            <!-- Config 配置中心相关 -->
+
             <!-- Job 定时任务相关 -->
+            <dependency>
+                <groupId>com.xuxueli</groupId>
+                <artifactId>xxl-job-core</artifactId>
+                <version>${xxl-job.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.yunxi</groupId>
                 <artifactId>yunxi-spring-boot-starter-job</artifactId>
@@ -386,12 +402,12 @@
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-server</artifactId>
                 <version>${spring-boot-admin.version}</version>
-                <exclusions>
+                <!--<exclusions>
                     <exclusion>
                         <groupId>de.codecentric</groupId>
                         <artifactId>spring-boot-admin-server-cloud</artifactId>
                     </exclusion>
-                </exclusions>
+                </exclusions>-->
             </dependency>
             <!-- 实现 Spring Boot Admin Server 服务端 -->
             <dependency>
@@ -607,6 +623,12 @@
                 <groupId>org.jsoup</groupId>
                 <artifactId>jsoup</artifactId>
                 <version>${jsoup.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.reflections</groupId>
+                <artifactId>reflections</artifactId>
+                <version>${reflections.version}</version>
             </dependency>
 
             <!-- 三方云服务相关 -->
