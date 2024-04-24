@@ -27,23 +27,26 @@
 
     <modules>
         <module>yunxi-spring-boot-starter-base</module>
+        <module>yunxi-spring-boot-starter-env</module>
+        <module>yunxi-spring-boot-starter-mybatis</module>
+        <module>yunxi-spring-boot-starter-redis</module>
+        <module>yunxi-spring-boot-starter-web</module>
+        <module>yunxi-spring-boot-starter-security</module>
+        <module>yunxi-spring-boot-starter-websocket</module>
+
+        <module>yunxi-spring-boot-starter-monitor</module>
+        <module>yunxi-spring-boot-starter-protection</module>
+        <module>yunxi-spring-boot-starter-job</module>
+        <module>yunxi-spring-boot-starter-mq</module>
+        <module>yunxi-spring-boot-starter-rpc</module>
+
+        <module>yunxi-spring-boot-starter-excel</module>
+        <module>yunxi-spring-boot-starter-test</module>
+
+        <module>yunxi-spring-boot-starter-tenant</module>
         <module>yunxi-spring-boot-starter-data-permission</module>
         <module>yunxi-spring-boot-starter-ip</module>
-        <module>yunxi-spring-boot-starter-tenant</module>
-        <module>yunxi-spring-boot-starter-excel</module>
-        <module>yunxi-spring-boot-starter-job</module>
-        <module>yunxi-spring-boot-starter-monitor</module>
-        <module>yunxi-spring-boot-starter-mq</module>
-        <module>yunxi-spring-boot-starter-mybatis</module>
-        <module>yunxi-spring-boot-starter-protection</module>
-        <module>yunxi-spring-boot-starter-redis</module>
-        <module>yunxi-spring-boot-starter-security</module>
-        <module>yunxi-spring-boot-starter-test</module>
-        <module>yunxi-spring-boot-starter-web</module>
-        <module>yunxi-spring-boot-starter-websocket</module>
         <module>yunxi-spring-boot-starter-pay</module>
-        <module>yunxi-spring-boot-starter-env</module>
-        <module>yunxi-spring-boot-starter-rpc</module>
     </modules>
 
 

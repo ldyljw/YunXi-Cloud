@@ -51,6 +51,21 @@
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
+        <!-- RPC 远程调用相关 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-spring-boot-starter-rpc</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- 业务组件 -->
+        <!-- 需要使用它，进行 Token 的校验 -->
+        <dependency>
+            <groupId>com.yunxi</groupId>
+            <artifactId>yunxi-module-system-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
         <!-- 工具类相关 -->
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -62,14 +77,6 @@
         <dependency>
             <groupId>io.github.mouzt</groupId>
             <artifactId>bizlog-sdk</artifactId>
-        </dependency>
-
-        <!-- 业务组件 -->
-        <!-- 需要使用它，进行 Token 的校验 -->
-        <dependency>
-            <groupId>com.yunxi</groupId>
-            <artifactId>yunxi-module-system-api</artifactId>
-            <version>${revision}</version>
         </dependency>
 
     </dependencies>
