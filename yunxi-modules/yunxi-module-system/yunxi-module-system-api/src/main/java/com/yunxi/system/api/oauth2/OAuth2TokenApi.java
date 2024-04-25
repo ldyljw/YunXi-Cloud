@@ -24,4 +24,5 @@ public interface OAuth2TokenApi {
     @SuppressWarnings("HttpUrlsUsage")
     String URL_CHECK = "http://" + ApiConstants.NAME + PREFIX + "/check";
 
+
 }
