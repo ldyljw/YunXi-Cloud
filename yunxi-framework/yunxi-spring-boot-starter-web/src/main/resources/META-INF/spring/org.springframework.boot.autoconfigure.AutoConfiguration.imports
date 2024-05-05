@@ -1,6 +1,6 @@
-cn.iocoder.yudao.framework.apilog.config.YudaoApiLogAutoConfiguration
-cn.iocoder.yudao.framework.jackson.config.YudaoJacksonAutoConfiguration
-cn.iocoder.yudao.framework.swagger.config.YudaoSwaggerAutoConfiguration
-cn.iocoder.yudao.framework.web.config.YudaoWebAutoConfiguration
-cn.iocoder.yudao.framework.apilog.config.YudaoApiLogRpcAutoConfiguration
-cn.iocoder.yudao.framework.banner.config.YudaoBannerAutoConfiguration
+com.yunxi.framework.apilog.config.YunxiApiLogAutoConfiguration
+com.yunxi.framework.jackson.config.YunxiJacksonAutoConfiguration
+com.yunxi.framework.swagger.config.YunxiSwaggerAutoConfiguration
+com.yunxi.framework.web.config.YunxiWebAutoConfiguration
+com.yunxi.framework.apilog.config.YunxiApiLogRpcAutoConfiguration
+com.yunxi.framework.banner.config.YunxiBannerAutoConfiguration
