@@ -1,2 +1,2 @@
-cn.iocoder.yudao.framework.quartz.config.YudaoXxlJobAutoConfiguration
-cn.iocoder.yudao.framework.quartz.config.YudaoAsyncAutoConfiguration
+com.yunxi.framework.quartz.config.YunxiAsyncAutoConfiguration
+com.yunxi.framework.quartz.config.YunxiXxlJobAutoConfiguration
