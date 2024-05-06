@@ -1,2 +1,2 @@
-cn.iocoder.yudao.framework.env.config.YudaoEnvWebAutoConfiguration
-cn.iocoder.yudao.framework.env.config.YudaoEnvRpcAutoConfiguration
+com.yunxi.framework.env.config.YunxiEnvWebAutoConfiguration
+com.yunxi.framework.env.config.YunxiEnvRpcAutoConfiguration
