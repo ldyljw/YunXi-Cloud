@@ -1,2 +1,2 @@
-cn.iocoder.yudao.framework.tracer.config.YudaoTracerAutoConfiguration
-cn.iocoder.yudao.framework.tracer.config.YudaoMetricsAutoConfiguration
+com.yunxi.framework.tracer.config.YunxiMetricsAutoConfiguration
+com.yunxi.framework.tracer.config.YunxiTracerAutoConfiguration

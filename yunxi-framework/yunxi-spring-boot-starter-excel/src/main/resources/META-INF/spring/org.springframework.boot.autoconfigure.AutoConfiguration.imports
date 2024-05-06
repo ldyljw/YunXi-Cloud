@@ -1,2 +1,2 @@
-cn.iocoder.yudao.framework.dict.config.YudaoDictRpcAutoConfiguration
-cn.iocoder.yudao.framework.dict.config.YudaoDictAutoConfiguration
+com.yunxi.framework.dict.config.YunxiDictRpcAutoconfiguration
+com.yunxi.framework.dict.config.YunxiDictAutoConfiguration
