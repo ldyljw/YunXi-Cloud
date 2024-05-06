@@ -84,6 +84,13 @@ public class ServiceExceptionUtil {
         return new ServiceException(code, message);
     }
 
+    /**
+     * 无效参数异常
+     *
+     * @param messagePattern 消息
+     * @param params         参数
+     * @return 异常信息
+     */
     public static ServiceException invalidParamException(String messagePattern, Object... params) {
         return exception0(GlobalErrorCodeConstants.BAD_REQUEST.getCode(), messagePattern, params);
     }
