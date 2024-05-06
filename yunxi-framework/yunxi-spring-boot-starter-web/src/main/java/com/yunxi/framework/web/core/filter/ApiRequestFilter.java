@@ -5,7 +5,6 @@ import com.yunxi.framework.web.config.WebProperties;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -22,7 +21,7 @@ public abstract class ApiRequestFilter extends OncePerRequestFilter {
     protected final WebProperties webProperties;
 
     @Override
-    protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
+    protected boolean shouldNotFilter(HttpServletRequest request) {
         // 只过滤 API 请求的地址
         return StrUtil.startWithAny(request.getRequestURI(),
                 webProperties.getAdminApi().getPrefix(), webProperties.getAppApi().getPrefix());
