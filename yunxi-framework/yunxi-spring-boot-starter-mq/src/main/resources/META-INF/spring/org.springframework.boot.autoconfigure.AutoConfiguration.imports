@@ -1,0 +1,3 @@
+com.yunxi.framework.mq.redis.config.YunxiRedisMQProducerAutoConfiguration
+com.yunxi.framework.mq.redis.config.YunxiRedisMQConsumerAutoConfiguration
+com.yunxi.framework.mq.rabbitmq.config.YunxiRabbitMQAutoConfiguration
